@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Challenge #15</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="alert">-- Please enter values for both fields --</h1>
+      <h1 class="header">Create Your Own Flashcards!</h1>
+      <button class="create-button">Create Card</button>
+      <div class="create-box">
+        <div class="x">X</div>
+        <p>Question</p>
+        <textarea
+          name=""
+          id=""
+          rows="3"
+          class="question-input"
+          placeholder="Who is Luke Skywalker's father?"
+        ></textarea>
+        <p>Answer</p>
+        <textarea
+          name=""
+          id=""
+          rows="3"
+          class="answer-input"
+          placeholder="Darth Vader"
+        ></textarea>
+        <div class="create-btns">
+          <button class="save-button">Save</button>
+          <button class="clear-button">Clear</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h2 class="question">What's the Capital of California?</h2>
+          <a href="">Show/Hide Answer</a>
+          <h3 class="answer"><br />Sacremento</h3>
+          <div class="card-btns">
+            <button class="edit">EDIT</button>
+            <button class="delete">DELETE</button>
+          </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 247, 247);
+  font-family: "Roboto", sans-serif;
+}
+
+/* classlist toggle stuffs */
+
+.flex {
+  display: flex;
+  opacity: 1;
+}
+
+/* ********************** */
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  border-radius: 1em;
+}
+
+.alert {
+  font-weight: 400;
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  color: rgba(255, 0, 0, 0.671);
+}
+
+.header {
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.create-button {
+  margin-top: 1em;
+  padding: 0.5rem 1rem;
+  font-size: 1.05em;
+  background: none;
+  color: orange;
+  border: 2px solid orange;
+  cursor: pointer;
+
+  transition: all 0.1s;
+}
+
+.create-button:hover {
+  background: orange;
+  color: white;
+}
+
+.create-box {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  margin-top: 2em;
+  gap: 0.5em;
+  border: 2px solid orange;
+  padding: 1.5em 1em;
+  width: 500px;
+  transition: opacity 0.15s;
+  background: rgb(247, 247, 247);
+}
+
+.create-box .x {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  background: none;
+  border: 2px solid orange;
+  color: rgba(0, 0, 0, 0.555);
+  font-weight: 800;
+  transition: all 0.15s;
+}
+
+.create-box .x:hover {
+  cursor: pointer;
+  background: orange;
+  color: white;
+}
+
+.create-box p {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.create-box p:nth-of-type(2) {
+  margin-top: 1em;
+}
+
+.create-box textarea {
+  font-size: 1.25em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.create-box textarea:focus {
+  outline: none;
+}
+
+.create-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-box button {
+  width: 30%;
+  font-size: 1.05em;
+  padding: 0.5rem 0rem;
+  background: none;
+  border: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  margin-top: 1em;
+  cursor: pointer;
+
+  transition: all 0.1s;
+}
+
+.create-box button:hover {
+  background: cornflowerblue;
+  color: white;
+}
+
+.card-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  padding: 1.5em;
+  border: 2px solid rgba(0, 0, 0, 0.158);
+  margin: 4em 2em;
+  height: max-content;
+}
+
+.card .question {
+  color: rgba(0, 0, 0, 0.555);
+  margin-bottom: 1em;
+  text-align: center;
+  max-width: 500px;
+}
+
+.card a {
+  color: cornflowerblue;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 1.15em;
+}
+
+.card a:hover {
+  color: rgb(62, 115, 214);
+  text-decoration: underline;
+}
+
+.card .answer {
+  color: rgba(0, 0, 0, 0.555);
+  text-align: center;
+  color: limegreen;
+  padding: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 1.25em;
+}
+
+.card-btns {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-btns button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background: none;
+  font-weight: 600;
+}
+
+.card-btns .edit {
+  border: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  margin-right: 5em;
+  transition: all 0.1s;
+}
+
+.card-btns .edit:hover {
+  cursor: pointer;
+  color: white;
+  background: cornflowerblue;
+}
+
+.card-btns .delete {
+  cursor: pointer;
+  border: 2px solid orange;
+  color: orange;
+  transition: all 0.1s;
+}
+
+.card-btns .delete:hover {
+  cursor: pointer;
+  color: white;
+  background: orange;
+}
+
+.revealed {
+  display: initial;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.invisible {
+  display: none;
+}
